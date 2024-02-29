@@ -1,0 +1,145 @@
+@charset "UTF-4";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+:root{
+    --cor1: #b5f4f7f1;
+    --cor2: #4D705E;
+    --cor3: #8B835E;
+    --cor4: #6713F5;
+    --cor5: #1F16F5;
+    --cor6: rgb(255, 255, 255);
+
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor2));
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+    border: solid 2px;
+    border-top: 0px;
+    border-bottom: 0px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.218);
+
+}
+
+header > p {
+    display: inline-block;  
+    margin-left: 30px;
+    
+}
+
+#bem-vindo{
+    width: 45%;
+    font-size: 3em;
+}
+
+nav{
+    display: flex;
+    margin: auto;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+nav > a {
+    display: inline-block;
+    border-radius: 5px;
+    padding: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+
+}
+
+abbr {
+    text-decoration: none;
+}
+
+nav > a:hover{
+    color: var(--cor1);
+    color: white;
+    background-color: var(--cor1-1)
+
+}
+
+body{
+    background-color: var(--cor1);
+}
+
+main{
+    max-width: 1000px;
+    min-width: 300px;
+    background-color: var(--cor6);
+    margin: auto;
+    border: solid 2px;
+    border-top: 0px;
+    border-bottom: 0px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.218);
+}
+
+#fotoperfil{
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+    padding-top: 10px;
+}
+
+main h1 {
+    text-align: center;
+}
+
+#p-titulo{
+    text-align: center;
+}
+
+
+#contratar {
+    text-align: center;
+    padding: 10px;
+
+}
+
+#contratar > a {
+    padding-left: 11px;
+    padding-right: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--cor4);
+}
+
+main h2{
+    padding: 5px 5px 5px 15px;
+}
+
+article p {
+    padding: 0px 15px 10px 5px;
+    text-align: justify;
+}
+
+article li{
+    padding: 0px 0px 10px 5px;
+    list-style-position: inside;
+    list-style-type: '\1F5F8';
+}
+
+footer{
+    background-image: linear-gradient(to top, var(--cor3), var(--cor2) );
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px 10px 0px 0px;
+
+}
+
+article a {
+    text-decoration: none;
+    color: black;
+}
+
+article a:hover{
+    text-decoration: underline;
+    color: var(--cor2);
+}
