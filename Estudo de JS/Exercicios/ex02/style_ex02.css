@@ -1,0 +1,44 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background: rgb(91, 91, 211);
+    color: white;
+}
+
+header{
+    text-align: center;
+    padding: 10px;
+
+}
+
+section{
+    background: white;
+    width: 400px;
+    margin: auto;
+    border-radius: 10px;
+    color: black;
+    padding: 10px;
+}
+div > p{
+    padding: 10px;
+}
+#botao{
+    padding: 3px;
+}
+#fotos{
+    padding-top: 5px;
+}
+
+footer{
+    text-align: center;
+}
+footer > p > a {
+    text-decoration: none;
+    color: white;
+}
+footer > p > a:hover{
+    text-decoration: underline;
+}

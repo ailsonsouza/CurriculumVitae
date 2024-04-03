@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detectando idade</title>
+    <link rel="stylesheet" href="style_ex02.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>Ano de nascimento
+                <input type="number" name="txtano" id="txtano" min="0"> <!-- Esse min="0" fará o código aceitar como valor minimo o número 0-->
+            </p>
+
+            <p> Sexo:
+                <input type="radio" name="radsex" id="mas" checked> 
+                <label for="mas">Masculino</label>
+                <input type="radio" name="radsex" id="fem"> 
+                <label for="fem">Feminino</label>
+            </p>
+
+            <p>
+                <input type="button" value="Verificar" id="botao" onclick="verificar()">
+            </p>
+
+        </div>
+
+        <div id="res">
+            <p>Preencha os dados acima para ver o resultado</p>
+        </div>
+
+
+    </section>
+    <footer>
+        <p>&copy;Ailson Souza - ensinado pelo <a href="https://www.youtube.com/watch?v=f5es-PpaUI8&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&index=21" target="_blank"><strong>CURSO EM VÍDEO</strong></a></p>
+        <p><a href="C:\Users\ailso\OneDrive\Área de Trabalho\Ailson\Estudos avulsos\JAVASCRIPT\JavaScript.html"><strong>VOLTAR</strong></a></p>
+    </footer>
+
+    <script src="ex02.js"></script>
+
+</body>
+</html>

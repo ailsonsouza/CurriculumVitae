@@ -1,0 +1,76 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+#area {
+    font: normal 15pt arial;
+    background: green;
+    color: white;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
+
+#area2 {
+    font: normal 15pt arial;
+    background: green;
+    color: white;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
+
+p{
+    padding: 5px 0px;
+}
+
+body{
+    background-color: aqua;
+    font-family: cursive, Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+main{
+    background-color: white;
+    max-width: 1000px;
+    margin: auto;
+    padding: 10px;
+}
+
+header{
+    text-align: center;
+    padding: 10px;
+}
+header > h1 > a{
+    text-decoration: none;
+}
+header > h1 > a:hover{
+    text-decoration: underline;
+}
+
+
+h2{
+    padding: 15px 0px;
+    text-align: center;
+}
+
+li {
+    list-style-position: inside;
+    padding-left: 25px;
+}
+
+pre {
+    text-align: center;
+}
+
+#ex01{
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(0, 255, 255, 0.596);
+    width: 350px;
+    margin: auto;
+    border: solid 1px black;
+}

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <link rel="stylesheet" href="JavaScript.css">
+   
+
+</head>
+<body>
+
+    <main>
+    <header>
+        <h1>Estudo de JavaScript - <a href="https://www.youtube.com/watch?v=1-w1RfGIov4&list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1&index=1" target="_blank">curso em video</a></h1>
+    </header>
+
+    <section>
+    <P>3 tecnologias que fazem parte do "Cliente": HTML (Conteúdo); CSS (Designer); JavaScript (programação).</P>
+    <p>Para delimitar uma string em JS pode usar a " ou a ' ou a `</p>
+    
+    <h2>Variáveis</h2>
+    <p>usa-se as palavras "var" e "let" para declarar as variáveis</p>
+    <p><strong>IMPORTANTE:</strong> Há diferença entre letras minúsculas e letras maiúsculas para a declaração das variáveis.</p>
+    <p>Tipos de variáveis: Number (pode ser subdividida em Infinity e NaN); string; boolean; null; underfined; object (array); function. </p>
+    <p>As variáveis podem começar com letra, $ ou _ . É possível usar acentos e símbolos. Não podem começar com números. É possível usar letras ou números. Não podem conter espaços</p>
+    <p>Para saber o tipo da variável vc pode declarar a variável e usar o comando "typeof"</p>
+    
+    <h2>Concatenação</h2>
+    <p> para concatenar em JS é usado o sinal de mais "+". Se for um number + number será feita uma adição. Se for uma string + string será feita uma concatenação</p>
+    <p>Para concatenar uma variavel em meio à uma string pode usar o ${ }. Exemplo: 'O aluno ${nome} com ${idade} anos tirou a nota &{nota}'</p>
+
+    <h2>TAGs do JavaScript</h2>
+    <ul>
+        <li>document.write() - escreve na tela o que colocar entre os parenteses</li>
+        <li>.toUpperCase() - coloca todas as letras em maiúsculo</li>
+        <li>.toLowerCase() - coloca todas as letras em minúsculo</li>
+        <li>// ou /*  */  - Utilizado para realizar comentários</li>
+        <li>Number.parseInt(n)  - converte uma string para número inteiro</li>
+        <li>Number.parseFloat(n)  - converte uma string para número real</li>
+        <li>Number   -   O computador decidirá para qual tipo de número irá converter</li>
+        <li>.toFixed(n)  - fixa a quantidade de casas decimais desejadas, onde "n" é a quantidade de casas desejadas</li>
+        <li>.replace ("X","x")  - troca uma coisa por outra, neste exemplo o "X" será substituído pelo "x"</li>
+        <li>.toLocaleString('pt-BR, {style: 'currency', currency: 'BRL'}')   -    Esse comando vai converter o número em dinheiro (real)</li>
+    </ul>
+
+    <h2>Operadores</h2>
+    <ul>
+        <li>aritméticos</li>
+        <li>atribuição</li>
+        <li>relacional</li>
+        <li>lógicos</li>
+        <li>ternário</li>
+    </ul>
+        <h3>Operadores aritméticos</h3>
+        <p>Os operadores aritméticos são: + ; - ; * ; / ; % (divisão que mostra o resto da divisão inteira Ex: 5 % 2 = 2 e resta 1, ele mostrará o resto, neste caso o 1); e ** (potência) </p>
+        <p>A precedência entre os operadores aritméticos da matemática também é respeitada aqui.</p>
+        <p><strong>Abreviação de operação:</strong> n = 3 -> n = n + 4 pode ser abreviado em n += 4</p>
+        <p><strong>Operador de incremento:</strong> x++ é a mesma coisa que x = x + 1 ; x-- é a mesma coisa que x = x - 1</p>
+
+        <h3>Operadores relacionais</h3>
+        <p>Os operadores relacionais são: > ; < ; >= ; <= ; == (igual); != (diferente) </p>
+        <p>O resultado de uma operação com operadores relacionais será sempre um valor booleano</p>
+
+        <h3>Operadores lógicos</h3>
+        <p>Os operadores lógicos são: ! ; &&; || ; sendo exclamação, conjunção e disjunção respectivamente. </p>
+        <p><strong>Precedência dos operadores: </strong>Primeiro é o operador aritmético, depois os operadores relacionais, depois os operadores lógicos</p>
+        <p><strong>Precedência entre os operadores lógicos: </strong>  Primeiro o "não", depois o "e", depois o "ou"</p>
+
+        <h3>Operador ternário</h3>
+        <p>Os operadores ternários são: "?" e ":"</p>
+        <p>São usados para realizar testes lógicos e retornar um valor</p>
+        <p>Sintaxe: teste ? true : false</p>
+        <p>Ex: média >= 7.0 ? "Aprovado" : "Reprovado"</p>
+        <p>O caso acima retornará "Aprovado" se a média do aluno for maior ou igual a 7.0 e "Reprovado" se a média do aluno for inferior a 7.0</p>
+
+        <h2>Estudando o DOM</h2>
+        <p>Definição de DOM: Document object model (modelo de objeto para documentos) </p>
+        <h3>Árvore DOM</h3>
+        <img src="https://th.bing.com/th/id/OIP.IYduKRvWdwGB4kEqKxJrGQAAAA?rs=1&pid=ImgDetMain" alt="Arvore DOM">
+        <p>Você pode selecionar os elementos dentro da árvore DOM das seguintes formas:</p>
+        <ul>
+            <li>Por marca: getElementsByTagName("escreva aqui o elemento desejado")[0,1,2,3...]</li>
+            <li>por ID: getElementByID</li>
+            <li>Por nome: getElementsByName()[]</li>
+            <li>Por classe: getElementsByClassName</li>
+            <li>Por seletor: querySelector() ou querySelectorAll() </li>
+        </ul>
+        <p>Ex: <'div id= "msg"> Por ID <'/div></p>
+        <p>var d = window.document.getElementById("msg") </p>
+        <p>d.style.background = "green"</p>
+        <P>O código acima fará o elemento com id "msg" ficar com o fundo verde </P>
+
+        <h3>Eventos DOM</h3>
+        <p>É tudo que pode acontecer com o elemento</p>
+        <p><strong>Funções: </strong> é o conjunto de funcionalidades que ocorrerão depois que o evento acontecer</p>
+        <p>É possível disparar os eventos diretamente pelo HTML ou pelo JavaScript</p>
+        <p>Exemplo de evento disparado diretamente do HTML: </p>
+
+        <div id="area" onclick="clicar()" onmouseenter="entrou()" onmouseout="saiu()">
+            Interaja...
+        </div>
+
+        <p>Código:</p>
+        <pre>
+            Parte HTML
+            <'div id="area" onclick="clicar()" onmouseenter="entrou()" onmouseout="saiu()">
+                Interaja...
+            <'/div>
+    
+            Parte JS
+            <'script>
+                var a = window.document.getElementById("area")
+    
+                function clicar(){
+                    a.innerText = "clicou!"
+                    a.style.background = "red"
+                }
+    
+                function entrou(){
+                    a.innerText = "Entrou"
+                }
+    
+                function saiu(){
+                    a.innerText = "Saiu"
+                    a.style.background = "green"
+                }
+            <'/script>
+        </pre>
+
+
+        <p>Exemplo de evento disparado pelo JS: </p>
+
+        <div id="area2">
+            Interaja...
+        </div>
+
+        <p>Código:</p>
+        <pre>
+            Parte HMTL
+            <'div id="area2">
+                Interaja...
+            <'/div>
+
+            Parte JS
+            <'script>
+                var a2 = window.document.getElementById("area2")
+                a2.addEventListener("click", clicou)
+                a2.addEventListener("mouseenter", entrar)
+                a2.addEventListener("mouseout", sair)
+    
+                function clicou(){
+                    a2.innerText = "clicou!"
+                    a2.style.background = "red"
+                }
+    
+                function entrar(){
+                    a2.innerText = "Entrou"
+                }
+    
+                function sair(){
+                    a2.innerText = "Saiu"
+                    a2.style.background = "green"
+                }
+            <'/script>
+        </pre>
+
+        <h3>Realizando uma soma com evento click com JS</h3>
+        <a href="Exercicios/soma.html">CLIQUE AQUI</a>
+
+
+        <h2>Estudo de Condições em JavaScript</h2>
+        <h3>Condição simples</h3>
+        <p>if (condição) {     } </p>
+        <p> Exercicio de velocidade usando a função IF. <a href="Exercicios/velocidade.html">Clique aqui</a></p>
+        <h3>Condição composta</h3>
+        <p>if (condição) {    } else {    } </p>
+
+        <p><strong>Dica:</strong> para capturar a hora do computador pode usar o seguinte comando:</p>
+        <p>var agora = new Date()</p>
+        <p>var hora = agora.getHours()</p>
+        <p>*** o getHours() captura a hora do computador, mas também há outros comandos que capturam os minutos, segundos e etc</p>
+
+        <h3>Condição múltipla</h3>
+        <p>switch (expressão) {case 1:     break  case 2:  break  case 3:     break default:(será feito se nenhuma das case foram feitas)  break }</p>
+        <p>Não pode esquecer de colocar o break no final de cada case</p>
+        <p>Exemplo:</p>
+        <pre>
+            var agora = new Date()
+            var diaSem = agora.getDay()
+
+            switch(diaSem) {
+                case 0:
+                console.log("Domingo")
+                break
+
+                case 1:
+                console.log("Segunda-feira")
+                break
+
+                case 2:
+                console.log("Terça-feira")
+                break
+
+                case 3:
+                console.log("Quarta-feira")
+                break
+
+                case 4:
+                console.log("Quinta-feira")
+                break
+
+                case 5:
+                console.log("Sexta-feira")
+                break
+
+                case 6:
+                console.log("Sábado")
+                break
+
+                defaul:
+                console.log("[ERRO] Dia inválido")
+                break
+            }
+        </pre>
+        <p>Lembrando que para o JS a semana começa no dia 0 - Domingo e termina no dia 6 - Sábado.</p>
+
+        <h3>Exercícios</h3>
+        <P>Exercicio 01: <a href="Exercicios/ex01/ex01.html">Hora do dia</a></P>
+        <p>Exercício 02: <a href="Exercicios/ex02/ex02.html">Detectando idade e colocando foto com JS</a></p>
+
+        <h2>Estruturas de repetição</h2>
+        <p>Estrutura com teste lógico no inicio: while (condição) {       } - Será executada enquanto o resultado da condição for verdadeira</p>
+        <p>Estrutura com teste lógico no final: do {     } while ( condição ) </p>
+        <p>Estrutura com teste lógico "for": for (  variável    ;  condição lógica         ;    ) {       } </p>
+        <p>"for" simplificado: for(let pos in num) {     } onde pos é a variável que está sendo declarada, 
+            o num é uma array já declarada anteriormente</p>
+        <p> Para procurar valores dentro do </p>
+
+        <h2>Variáveis compostas</h2>
+        <p><strong>Variáveis simples:</strong> só conseguem armazenar um valor por vez</p>
+        <p><strong>Variáveis compostas: </strong> devem ser capazes de armazenar vários valores em uma mesma estrutura</p>
+        <p>As variáveis compostas são formadas por array, cada array é formada por elementos e esses elementos possuem um valor e um índice</p>
+        <p> Ex:  let num = [5, 8, 20] </p>
+        <p> É possível acrescentar elementos na array</p>
+        <p> Exemplo:  num [3] = 6 ou pode usar o num.push [7] neste último caso o JS colocará o 
+            número 7 na última vaga da array não importa o tamanho dela</p>
+        <p>para saber o tamanho da array usa-se o num.length</p>
+        <p>o comando num.sort() colocará todos os elementos em ordem crescente </p>
+        <p>O comando num.indexOf(x) retornará o índice do número que vc colocou no lugar do x, ou seja, 
+            se for colocado num.indexOf(3) será retornado em qual posição da array está o número 3 </p>
+
+        <h2>Funções</h2>
+        <p>Ações são executadas assim que são CHAMADAS ou em decorrência de algum EVENTO. 
+            Uma função pode receber PARÂMETROS e RETORNAR um resultado.</p>
+        <p><strong>DICA: SE APROFUNDAR NO ESTUDO DE RECURSIVIDADE EM FUNÇÕES</strong></p>
+        <p>Ex de sintaxe: </p>
+        <pre>
+            function ação(parametro) {
+
+                return res
+            }
+
+            ação(5)
+        </pre>
+        <p>No caso acima o "ação" é a chamada e o parâmetro será 5</p>
+        <p>Exemplo real:</p>
+        <pre>
+
+            function parimp(n){
+
+                if(n%2==0) {
+                    return 'par'
+                }else {
+                    return 'ímpar'
+                }
+
+            }
+
+            let res = parimp (11)
+        </pre>
+
+        <p>Exemplo: </p>
+        <div  id="ex01">
+            <p>Insira um número para verificar se ele é par ou ímpar</p>
+            <input type="number" name="parimp" id="parimp">
+            <input type="button" value="Definir" onclick="definir(Number(document.getElementById('parimp').value))">
+            <p id="resultParimp"></p>
+        </div>
+        <p>Código HTML do exemplo acima</p>
+        <pre>
+            <'div  id="ex01">
+                <'p>Insira um número para verificar se ele é par ou ímpar</p>
+                <'input type="number" name="parimp" id="parimp">
+                <'input type="button" value="Definir" onclick="definir(Number(document.getElementById('parimp').value))">
+                <'p id="resultParimp"></p>
+            <'/div>
+        </pre>
+        <p>Código JavaScript do exemplo acima</p>
+        <pre>
+            function definir(numero){
+    
+                let result = '';
+            
+                if (numero % 2 === 0) {
+                    result = 'Par';
+                } else {
+                    result = 'Ímpar';
+                }
+            
+                let resultParImpar = document.getElementById("resultParimp");
+                resultParImpar.innerHTML = `O número escolhido é ${result}`;
+            }
+        </pre>
+
+
+    </section>
+    
+        <script src="JavaScript.js"></script>
+
+    <footer>
+
+    </footer>
+
+    </main>
+</body>
+</html>
